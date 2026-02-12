@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: linear-gradient(
+        90deg,
+        hsl(267deg 93% 27%) 13%,
+        hsl(270deg 91% 29%) 43%,
+        hsl(274deg 89% 30%) 49%,
+        hsl(277deg 86% 31%) 50%,
+        hsl(279deg 83% 33%) 50%,
+        hsl(282deg 81% 34%) 50%,
+        hsl(285deg 78% 35%) 50%,
+        hsl(287deg 76% 37%) 51%,
+        hsl(290deg 74% 38%) 57%,
+        hsl(292deg 71% 40%) 87%
+      );
+}
+
+.card{
+    /* background-image: linear-gradient(
+        70deg,
+        hsl(250deg 100% 29%) 13%,
+        hsl(262deg 100% 29%) 43%,
+        hsl(270deg 100% 29%) 49%,
+        hsl(277deg 100% 29%) 50%,
+        hsl(282deg 100% 29%) 50%,
+        hsl(287deg 100% 29%) 50%,
+        hsl(292deg 100% 29%) 50%,
+        hsl(297deg 100% 29%) 51%,
+        hsl(301deg 94% 30%) 57%,
+        hsl(305deg 83% 34%) 87%
+      ); */
+      background-image: linear-gradient(
+        70deg,
+        hsl(222deg 69% 11%) 13%,
+        hsl(218deg 100% 13%) 43%,
+        hsl(221deg 100% 17%) 49%,
+        hsl(223deg 100% 21%) 50%,
+        hsl(224deg 100% 25%) 50%,
+        hsl(226deg 100% 29%) 50%,
+        hsl(228deg 100% 33%) 50%,
+        hsl(230deg 100% 37%) 51%,
+        hsl(233deg 100% 41%) 57%,
+        hsl(250deg 95% 46%) 87%
+      );
+}
+
+.navbar{
+    background-image: linear-gradient(
+        60deg,
+        hsl(233deg 100% 17%) 1%,
+        hsl(232deg 86% 22%) 43%,
+        hsl(232deg 77% 27%) 50%,
+        hsl(231deg 72% 32%) 51%,
+        hsl(229deg 69% 36%) 51%,
+        hsl(228deg 68% 41%) 49%,
+        hsl(226deg 68% 45%) 49%,
+        hsl(224deg 69% 50%) 50%,
+        hsl(222deg 82% 54%) 57%,
+        hsl(220deg 98% 57%) 99%
+    );
+}
+
+.footer{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(
+        60deg,
+        hsl(244deg 74% 7%) 1%,
+        hsl(244deg 74% 7%) 44%,
+        hsl(244deg 74% 7%) 50%,
+        hsl(244deg 74% 7%) 51%,
+        hsl(244deg 74% 7%) 50%,
+        hsl(244deg 74% 7%) 49%,
+        hsl(244deg 74% 7%) 50%,
+        hsl(244deg 74% 7%) 56%,
+        hsl(244deg 74% 7%) 99%
+   );
+}
+
+.footer-box{
+    width: 25%;
+    margin-bottom: 3rem;
+}
+
+.footer-box p:first-of-type{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 2.5rem;
+}
+
+.company p:last-of-type{
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-details li{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.contact-details span{
+    margin-left: 1rem;
+}
+
+.list-item li{
+    margin-top: 1rem;
+}
+
+@media(max-width: 850px){
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    .company p:last-of-type{
+        width: 50%;
+        word-break: break-all;
+    }
+}
+  
